@@ -10,6 +10,7 @@ import RootBoundary from "./components/errors/RootBoundary";
 
 import { Layout } from "./layout";
 import Index from "./pages/index";
+import Dashboard from "./pages/Dashboard";
 import NotFound from "./pages/NotFound";
 import { useTheme } from "./theme/use-theme";
 
@@ -28,6 +29,10 @@ const App = () => {
         {
           index: true,
           element: <Index />,
+        },
+        {
+          path: "dashboard",
+          element: <Dashboard />,
         },
         {
           path: "*",
